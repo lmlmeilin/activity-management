@@ -18,7 +18,7 @@ const App: React.FC = () => {
     <div className = "app-container">
       <div className="activities-list">
 
-        <h1>Volunteering Categories</h1>
+        <h1>Volunteering Events</h1>
         <ul>
           {activities.map((activity) => (
             <ActivityItem
