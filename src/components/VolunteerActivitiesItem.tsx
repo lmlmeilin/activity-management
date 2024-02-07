@@ -25,8 +25,8 @@ const VolunteerActivitiesItem: React.FC<VolunteerActivitiesItemProps> = ({ volun
         <form>
           <h4>Fill The below form to let us know about your volunteering preferences and get added to Big At Heart Volunteers WhatsApp Group</h4>
         <div className="mb-3">
-          <label htmlFor="formGroupExampleInput" className="form-label">Full Name</label>
-          <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Enter your fullname" name="exampleInput" />
+          <label htmlFor="formGroupExampleInput1" className="form-label">Full Name</label>
+          <input type="text" className="form-control" id="formGroupExampleInput1" placeholder="Enter your Full Name" name="exampleInput" />
         </div>
         <div className="mb-3">
           <select className="form-select" id="formGroupExampleInput2" name="genderOption">
@@ -38,11 +38,11 @@ const VolunteerActivitiesItem: React.FC<VolunteerActivitiesItemProps> = ({ volun
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput3" className="form-label">Email</label>
-          <input type="text" className="form-control" id="formGroupExampleInput3" placeholder="Example input placeholder" name="exampleInput" />
+          <input type="text" className="form-control" id="formGroupExampleInput3" placeholder="Enter your email" name="exampleInput" />
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput4" className="form-label">Whatsapp Phone Number</label>
-          <input type="text" className="form-control" id="formGroupExampleInput4" placeholder="Example input placeholder" name="exampleInput" />
+          <input type="text" className="form-control" id="formGroupExampleInput4" placeholder="Enter your phone number" name="exampleInput" />
         </div>
         <button type="submit" className="btn btn-success">Submit</button>
       </form>

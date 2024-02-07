@@ -18,7 +18,7 @@ const App: React.FC = () => {
     <div className = "app-container">
       <div className="activities-list">
 
-        <h1>Volunteering Events</h1>
+        <h1>Volunteer Categories</h1>
         <ul>
           {activities.map((activity) => (
             <ActivityItem
@@ -32,7 +32,7 @@ const App: React.FC = () => {
       </div>
     {activeActivityId != null && (
       <div className="volunteer-activities-grid">
-      <h2>Volunteer Activities</h2>
+      <h2>Volunteer Events </h2>
       <div className="grid">
        {volActsList.filter(volAct => volAct.activityid === activeActivityId).map(volAct => (
           <VolunteerActivitiesItem 
