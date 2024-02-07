@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import ActivityItem from './components/ActivityItem'; 
 import { activities } from './components/Activity';
-
 import VolunteerActivitiesItem from './components/VolunteerActivitiesItem';
 import { volActsList } from './components/VolunteerActivities';
+import Profile from './components/Profile'; 
 
 const App: React.FC = () => {
   const [activeActivityId, setActiveActivityId] = useState<number | null>(null);
@@ -15,7 +15,14 @@ const App: React.FC = () => {
   };
 
   return (
+    
     <div className = "app-container">
+      <div className = "profile">
+        <h1> Profile Page </h1>
+        <Profile />
+
+      </div>
+    
       <div className="activities-list">
 
         <h1>Volunteer Categories</h1>
@@ -31,7 +38,7 @@ const App: React.FC = () => {
         </ul>
       </div>
     {activeActivityId != null && (
-      <div className="volunteer-activities-grid">
+    <div className="volunteer-activities-grid">
       <h2>Volunteer Events </h2>
       <div className="grid">
        {volActsList.filter(volAct => volAct.activityid === activeActivityId).map(volAct => (
@@ -41,7 +48,10 @@ const App: React.FC = () => {
         ))} 
       </div>
     </div>
+    
   )}
+
+
 </div>
 );
 
