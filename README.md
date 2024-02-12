@@ -10,6 +10,6 @@ Pages
 5) Volunteer Sign Up Page
 
 How to run the app? 
-- Navigate to the main directory of the app 'react_lml'
+- Navigate to the main directory of the app 'activity-management'
 - Run this command 'npm run dev'
 - A local host link will pop up, directing you to the application
